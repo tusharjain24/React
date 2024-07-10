@@ -12,7 +12,7 @@ Welcome to the comprehensive repository dedicated to learning ReactJS in depth. 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/hiteshchoudhary/chai-aur-react.git
+   git clone https://github.com/tusharjain24/react.git
    ```
 
 2. Navigate to each project folder and follow the instructions in the respective README to set up and run the project.
