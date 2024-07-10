@@ -25,6 +25,8 @@ import App from './App.jsx'
 
 //  const reactElement = React.createElement('a',{href: "https://www.google.com", target: "_blank"}, "click me to visit google")
 
+// To learn about reactElement function it's src code = https://github.com/facebook/react/blob/main/packages/react/src/jsx/ReactJSXElement.js
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App/>
