@@ -6,7 +6,6 @@ Welcome to the comprehensive repository dedicated to learning ReactJS in depth. 
 
 - **In-Depth Explanations**: Each concept is broken down for easier understanding and comprehensive learning.
 - **Project-Based Learning**: Multiple projects to ensure that your theoretical knowledge is supplemented with practical experience.
-- **Free Video Series**: All lessons are available in video format on our YouTube channel "chai aur code".
 
 ## 🚀 Getting Started
 
@@ -16,8 +15,6 @@ Welcome to the comprehensive repository dedicated to learning ReactJS in depth. 
    ```
 
 2. Navigate to each project folder and follow the instructions in the respective README to set up and run the project.
-
-3. Parallelly, watch the video lessons on the ["chai aur code" YouTube channel](https://www.youtube.com/channel/UCNQ6FEtztATuaVhZKCY28Yw) for a detailed walk-through.
 
 
 ## 📖 Additional Resources
