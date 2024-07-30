@@ -1,19 +1,5 @@
 # REACT FIBRE
 
-**VIRTUAL DOM:** In React, the Virtual DOM (VDOM) is a lightweight, in-memory representation of the actual DOM (Document Object Model). It's a JavaScript object that mirrors the structure of the real DOM, representing the UI of your application at a given point in time.
-
-**Hydration:** It is a technique that to inject JavaScript into a static HTML web page to make it interactive and dynamic.
-
-**REACT FIBRE:**
-
-- We use React Fibre to update the Virtual DOM.
-
-- In React, React Fibre is an implementation of React's Core Algorithm. Its headline feature is incremental rendering: the ability to split rendering work into chunks and spread it out over multiple frames.
-
-- Other key features include the ability to pause, abort, or reuse work as new updates come in; the ability to assign priority to different types of updates; and new concurrency primitives.
-
-- _For Example:_ Suppose an element in DOM is network dependent(let's say a button) whose text is being updated and then from network call another update comes while the text inside the button is being updated the first time and another update come while being updated the second time. Then is there a way to wait for some time before updating the UI so that we can skip the intermidiate update? For this we use _REACT FIBRE_.
-
 ## Prerequisites
 
 - **React Components, Elements, and Instances** - "Component" is often an overloaded term. A firm grasp of these terms is crucial.
@@ -40,7 +26,13 @@ The key points are:
 - Different component types are assumed to generate substantially different trees. React will not attempt to differentiate them, but rather replace the old tree completely.
 - Differentiating of lists is performed using keys. Keys should be "stable, predictable, and unique."
 
-## Scheduling
+## What actually is a Virtual DOM
+
+In React, the Virtual DOM (VDOM) is a lightweight, in-memory representation of the actual DOM (Document Object Model). It's a JavaScript object that mirrors the structure of the real DOM, representing the UI of your application at a given point in time.
+
+**Hydration:** It is a technique that to inject JavaScript into a static HTML web page to make it interactive and dynamic.
+
+## What is Scheduling
 
 - **Scheduling:** The process of determining when work should be performed.
 - **work:** Any computations that must be performed. Work is usually the result of an update (e.g. `setState`).
@@ -51,6 +43,18 @@ The key points are:
 - Different types of updates have different priorities — an animation update needs to complete more quickly than, say, an update from a data store.
 - A push-based approach requires the app (you, the programmer) to decide how to schedule work. A pull-based approach allows the framework (React) to be smart and make those decisions for you.
   React doesn't currently take advantage of scheduling in a significant way; an update results in the entire subtree being re-rendered immediately. Overhauling React's core algorithm to take advantage of scheduling is the driving idea behind Fiber.
+
+## What is React Fibre
+
+- In React, React Fibre is an implementation of React's Core Algorithm. Its headline feature is incremental rendering: the ability to split rendering work into chunks and spread it out over multiple frames.
+
+- We use React Fibre to update the Virtual DOM.
+
+- Other key features include the ability to pause, abort, or reuse work as new updates come in; the ability to assign priority to different types of updates; and new concurrency primitives.
+
+- _For Example:_ Suppose an element in DOM is network dependent (let's say a button) whose text is being updated and then from network call another update comes while the text inside the button is being updated the first time and another update come while being updated the second time. Then is there a way to wait for some time before updating the UI so that we can skip the intermidiate update? For this we use _REACT FIBRE_.
+
+# Conclusion
 
 We've established that a primary goal of Fiber is to enable React to take advantage of scheduling. Specifically, we need to be able to
 
