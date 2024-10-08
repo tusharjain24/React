@@ -3,7 +3,7 @@ useCallback is a React Hook that lets you cache a function definition between re
 
 Syntax: useCallback(fn, dependencies)
 
-useCallback is a Hook in React that helps you optimize your components by memoizing callback functions. Memoization means that React will remember the function you created and only recreate it if one of its dependencies changes. This can help prevent unnecessary re-renders and improve performance.
+useCallback is a Hook in React that helps you optimize your components by memorizing callback functions. Memoization means that React will remember the function you created and only recreate it if one of its dependencies changes. This can help prevent unnecessary re-renders and improve performance.
 */
 
 /* 
